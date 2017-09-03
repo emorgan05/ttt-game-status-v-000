@@ -65,7 +65,5 @@ def winner(board)
     index = array[0]
     winner = board[index]
     return winner
-  else
-    return nil
   end
 end
