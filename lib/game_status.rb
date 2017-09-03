@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_array|
+  WIN_COMBINATIONS.all? do |win_array|
     if win_array.all? { |win_index| position_taken?(board, win_index) }
       win_index_1 = win_array[0]
       win_index_2 = win_array[1]
