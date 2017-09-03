@@ -26,8 +26,8 @@ def won?(board)
         return win_array
       end
     end
-    return false
   end
+  return false
 end
 
 def full?(board)
