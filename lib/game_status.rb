@@ -32,10 +32,8 @@ def won?(board)
 end
 
 def full?(board)
-  empty_position = board.detect { " " }
-  if empty_position
+  if board.include?(" ")
     return false
   else
     return true
-  end
 end
