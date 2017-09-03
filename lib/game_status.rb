@@ -60,8 +60,12 @@ def over?(board)
 end
 
 def winner(board)
-  array = won?(board)
-  index = array[0]
-  winner = board[index]
-  return winner
+  if won?(board)
+    array = won?(board)
+    index = array[0]
+    winner = board[index]
+    return winner
+  else
+    return nil
+  end
 end
